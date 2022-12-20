@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Я являюсь Frontend-разработчиком, создаю из макетов адаптивные и SEO-Friendly веб-сайты для поисковых систем, используя языки HTML, CSS и JavaScript">
+        <meta name="copyright" content="Anis Shadlia" />
+        <meta name="author" content="Shadlia" />
+
+        <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        /> -->
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Портфолию</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header" >
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">
+                    <img src="imgs/logo.png" alt="Логотип">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link home-nav">
+                                <i class='bx bx-home-alt'></i> Главная
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link about-nav">
+                                <i class='bx bx-user' ></i> Обо мне
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link skills-nav">
+                                <i class='bx bx-book' ></i> Навыки
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#service" class="nav__link services-nav">
+                                <i class='bx bx-briefcase-alt-2' ></i> Сервисы
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link work-nav">
+                                <i class='bx bx-image' ></i> Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link contact-nav">
+                                <i class='bx bx-message-square-dots' ></i> Связь
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="nav__buttons">
+                    <select class="lang__switch" id="lang-switch">
+                        <option value="ru">ru</option>
+                        <option value="en">en</option>
+                    </select>
+                    <i class='bx bx-moon change-theme' id="theme-button" ></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting hello">Привет, Я</span>
+                        <h1 class="home__name name">Анис Шадлиа</h1>
+                        <h3 class="home__education work" >Фронтенд-Разработчик</h3>
+
+                        <div class="home__buttons">
+                            <a download="pdf/ШадлиаАнис.pdf" href="pdf/ШадлиаАнис.pdf" class="button button--ghost cvBtn">
+                                <span class="resume">Резюме</span> <i class='bx bxs-download'></i>
+                            </a>
+                            <a href="#about" class="button about-cv">Обо мне</a>
+                        </div>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="imgs/profil.png" alt="Анис" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://tenchat.ru/anisweb" target="_blank" class="home__social-link ten linkedin_home">
+                            <i class='tenchat' >T</i>
+                        </a>
+                        <a href="https://github.com/Anis-Web" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                        <a href="https://instagram/anischadlia" target="_blank" class="home__social-link stack_home">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class="bx bx-mouse home__scroll-icon" ></i> 
+                        <span class="home__scroll-name scrollDown">Вниз</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle intro">Мое вступление</span>
+                <h2 class="section__title about-section">Обо мне</h2>
+
+                <div class="about__container container grid">
+                    <figure class="about__img">
+                        <img src="imgs/about.png" alt="Анис">
+                    </figure>
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class='bx bx-award about__icon'></i>
+                                <h3 class="about__title experience">Опыт</h3>
+                                <span class="about__subtitle years">1 Год</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class='bx bx-briefcase-alt about__icon' ></i>
+                                <h3 class="about__title completed">Завершено</h3>
+                                <span class="about__subtitle completed-sub">20 + Проектов</span>
+                            </div>
+
+                            <div class="about__box">
+                                <i class='bx bx-support about__icon' ></i>
+                                <h3 class="about__title support">Поддержка</h3>
+                                <span class="about__subtitle support-sub">Онлайн 24/7</span>
+                            </div>
+                        </div>
+                        <p class="about__description about-des">
+                            Я являюсь Фронтенд-разработчиком, создаю из макетов
+                            адаптивные и SEO-Friendly веб-сайты для поисковых систем,
+                            используя языки HTML, CSS и JavaScript
+                        </p>
+
+                        <a href="#contact" class="button write-me">
+                            Напиши мне
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <span class="section__subtitle experience-skills">Мои навыки</span>
+                <h2 class="section__title work-experience">Опыт работы<h2>
+
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title skills-title">Фронтенд Разработчик</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            HTML
+                                        </h3>
+                                        <span class="skills__level html-exp">Средний</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            CSS
+                                        </h3>
+                                        <span class="skills__level css-exp">Продвинутый</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            JavaScript
+                                        </h3>
+                                        <span class="skills__level js-exp">Средний</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Bootstrap
+                                        </h3>
+                                        <span class="skills__level bst-exp">Базовый</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            Git
+                                        </h3>
+                                        <span class="skills__level git-exp">Средний</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class="bx bxs-badge-check"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">
+                                            React
+                                        </h3>
+                                        <span class="skills__level react-exp">Базовый</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SERVICES ===============-->
+            <section id="service" class="services section">
+                <span class="section__subtitle offer">Сфера деятельности</span>
+                <h2 class="section__title services-title">Сервисы</h2>
+
+                <div class="services__container container grid section__border"> 
+                    <div class="services__card">
+                        <i class='bx bx-code'></i>
+
+                        <h2 class="services__title web-developing">
+                            Веб <br>
+                            Разработка
+                        </h2>
+
+                        <p class="services__description web-developing-des">
+                            Создаю веб-сайты из макетов, используя 
+                            языки HTML, CSS и JavaScript
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+                    <div class="services__card">
+                        <i class='bx bx-layout' ></i>
+
+                        <h2 class="services__title responsive-title">
+                            Адаптивный <br>
+                            Веб-сайт
+                        </h2>
+
+                        <p class="services__description responsive-des">
+                            Правильное отображение сайта на различных 
+                            устройствах и динамическая настройка под указанный
+                            размер окна браузера
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+                    <div class="services__card">
+                        <i class='bx bx-search'></i>
+
+                        <h2 class="services__title">
+                            SEO <br>
+                            Friendly 
+                        </h2>
+
+                        <p class="services__description seo-des">
+                            Разработка сайта и создание его SEO-Friendly для поисковых систем
+                        </p>
+
+                        <div class="services__border"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="projects section" id="work">
+                <span class="section__subtitle last-work">Мои последние работы</span>
+                <h2 class="section__title projects-title">Проекты</h2>
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Project 1 -->
+                            <div class="projects__content swiper-slide">
+                                <img src="imgs/work1.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle work-one">Веб</span>
+                                    <h1 class="projects__title work-one-title">Современный веб-сайт</h1>
+
+                                    <a href="https://anis-web.github.io/elelectroTemp" target="_blank" class="projects__button demo-one">
+                                        демо <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="projects__content swiper-slide">
+                                <img src="imgs/work2.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle work-two">Веб</span>
+                                    <h1 class="projects__title work-two-title">Интернет магазин</h1>
+
+                                    <a href="https://anis-web.github.io/ClothingPage" target="_blank" class="projects__button demo-two">
+                                        демо <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Project 3 -->
+                            <div class="projects__content swiper-slide">
+                                <img src="imgs/work3.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle work-three">Веб</span>
+                                    <h1 class="projects__title work-three-title">Лендинг страница</h1>
+
+                                    <a href="https://anis-web.github.io/kasperTemp" target="_blank" class="projects__button demo-three">
+                                        демо <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Project 4 -->
+                            <div class="projects__content swiper-slide">
+                                <img src="imgs/work4.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle work-four">Анимация</span>
+                                    <h1 class="projects__title work-four-title">Анимационный прототип</h1>
+
+                                    <a href="https://anis-web.github.io/animationEl" target="_blank" class="projects__button demo-four">
+                                        демо <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class='bx bx-chevron-right'></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-chevron-left'></i>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle talk">Связь со мной</span>
+                <h2 class="section__title talk-title">Связь</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title talk-sub">Свяжитесь со мной</h3>
+
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3 class="contact__card-title mail">Почта</h3>
+                                <!-- <span class="contact__card-data">chadlia.a@yandex.ru</span> -->
+
+                                <a href="achadlia0@gmail.com" target="_blank" class="contact__button contact-write-mail">
+                                    Напишите мне <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+
+                            </div>
+                            <div class="contact__card">
+                                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <!-- <span class="contact__card-data">+7 995-763-1298</span> -->
+
+                                <a href="https://api.whatsapp.com/send?phone=+79692238868&text=Добрый День!" target="_blank" class="contact__button contact-write-wp">
+                                    Напишите мне <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+
+                            </div>
+                            <div class="contact__card">
+                                <i class="bx bxl-telegram contact__card-icon"></i>
+                                <h3 class="contact__card-title">Telegram</h3>
+                                <!-- <span class="contact__card-data">+7 995-763-1298</span> -->
+
+                                <a href="https://t.me/anis_web" target="_blank" class="contact__button contact-write-tg">
+                                    Напишите мне <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <h3 class="contact__title project-write">Напишите мне о своем проекте</h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag form-name">Имя</label>
+                                <input type="text" placeholder="Введите свое имя" name="user_name" id="contact-name" class="contact__form-input formNameInput">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag form-mail">Почта</label>
+                                <input type="email" placeholder="Введите свою почту" name="user_email" id="contact-email" class="contact__form-input formMailInput">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag form-project">Проект</label>
+                                <textarea name="user_project" id="contact-project"  placeholder="Опишите свой проект" class="contact__form-input formProjectInput"></textarea>
+                                <p class="contact__message" id="contact-message"></p>
+                            </div>
+
+                            
+
+                            <button class="button form-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Anis</h1>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link footer-about">Обо мне</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link footer-project">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link footer-service">Сервисы</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__social">
+                    <a href="https://vk.com/id757088621" target="_blank" class="footer__social-link  linkedin_footer">
+                        <i class='bx bxl-vk'></i>
+                    </a>
+                    <a href="https://instagram/anischadlia" target="_blank" class="footer__social-link stack_footer">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://t.me/anis_web" target="_blank" class="footer__social-link">
+                        <i class="bx bxl-telegram"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Анис. Все права защищены
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+        <!--=============== EMAILJS ===============-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!--=============== Lang ===============-->
+        <script src="js/lang.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="js/script.js"></script>
+    </body>
+</html>
