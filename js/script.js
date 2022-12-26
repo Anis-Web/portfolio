@@ -27,8 +27,8 @@ function changeLang() {
     if(hash === 'en'){
         document.querySelector('meta[name="description"]').content = `I am a Frontend developer, I create from layouts a responsive and friendly websites for the search engines, using HTML, CSS, and JavaScript languages` 
         document.querySelector('html').lang = "en"
-        document.querySelector('.cvBtn').download = `pdf/ShadliaAnis.pdf`
-        document.querySelector('.cvBtn').href = `pdf/ShadliaAnis.pdf`
+        document.querySelector('.cvBtn').download = `pdf/ShadliaAnisCv.pdf`
+        document.querySelector('.cvBtn').href = `pdf/ShadliaAnisCv.pdf`
         document.querySelector('.stack_home').innerHTML = `<i class='bx bxl-stack-overflow'></i>`
         document.querySelector('.stack_home').href = `https://stackoverflow.com/users/20814448/anis?tab=profile`
         document.querySelector('.linkedin_home').innerHTML = `<i class='bx bxl-linkedin' ></i>`
